@@ -1,0 +1,6 @@
+Car Control Script
+The car's movement is controlled using a basic hand gesture recognition system built using OpenCV and MediaPipe. The primary gestures include:
+
+Open Hand (5 fingers): Move the car forward.
+Closed Hand (fingers curled): Turn the car in the direction of the closed fist.
+Both Hands Closed: Stop the car.

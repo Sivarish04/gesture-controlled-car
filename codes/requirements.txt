@@ -1,0 +1,25 @@
+Software Requirements (Libraries):
+
+Arrduino IDE:
+
+SoftwareSerial: For Bluetooth communication (HC-05).
+AFMotor (optional): For motor control with L298N (if preferred
+
+Python Libraries:
+
+Required Libraries and Installation Commands
+
+cv2 (OpenCV)
+For video capture and image processing.
+Install: pip install opencv-python
+
+cvzone
+For hand detection and finger counting.
+Install:pip install cvzone
+
+pyserial
+For communication with the Bluetooth module (HC-05).
+Install:pip install pyserial
+
+
+
