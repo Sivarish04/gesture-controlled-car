@@ -1,0 +1,38 @@
+Here’s a basic wiring diagram for your gesture-controlled car project using Arduino, HC-05 Bluetooth module, and L298N motor driver:
+
+Components Needed:
+Arduino Uno (or similar)
+L298N Motor Driver
+DC Motors (2)
+HC-05 Bluetooth Module
+Jumper Wires
+Power Source (Battery)
+Wiring Diagram:
+L298N Motor Driver Connections:
+
+IN1 (L298N) → Pin 2 (Arduino) (Control left motor)
+IN2 (L298N) → Pin 3 (Arduino) (Control left motor)
+IN3 (L298N) → Pin 4 (Arduino) (Control right motor)
+IN4 (L298N) → Pin 5 (Arduino) (Control right motor)
+ENA (L298N) → 5V (Arduino) (Enable motor driver)
+ENB (L298N) → 5V (Arduino) (Enable motor driver)
+OUT1 (L298N) → Left Motor (A) (Motor 1)
+OUT2 (L298N) → Left Motor (B) (Motor 2)
+OUT3 (L298N) → Right Motor (A) (Motor 3)
+OUT4 (L298N) → Right Motor (B) (Motor 4)
+GND (L298N) → GND (Arduino) (Common ground)
+HC-05 Bluetooth Module Connections:
+
+TX (HC-05) → Pin 10 (Arduino) (Transmit data from HC-05 to Arduino)
+RX (HC-05) → Pin 11 (Arduino) (Receive data from Arduino to HC-05)
+VCC (HC-05) → 5V (Arduino) (Power for Bluetooth)
+GND (HC-05) → GND (Arduino) (Common ground)
+Power Source:
+
++ (Battery) → + (L298N) (Motor power)
+- (Battery) → GND (Arduino) and GND (L298N) (Common ground)
+Connections Overview:
+Arduino to L298N: Control pins (IN1, IN2, IN3, IN4) to drive the motors.
+Arduino to HC-05: Use software serial (TX, RX) to communicate with the Bluetooth module.
+L298N to Motors: Out1, Out2 for the left motor, Out3, Out4 for the right motor.
+Powering L298N and Arduino: Separate power for the motors and Arduino, but they share a common ground.
